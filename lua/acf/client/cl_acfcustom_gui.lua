@@ -1,3 +1,6 @@
+local PANEL = {}
+local acfmenupanelcustom
+
 --------------------------------------
 --	Initialize
 --------------------------------------
@@ -313,7 +316,7 @@ function ACFCUSTOMChangelogHTTPCallBack(contents , size)
 		Table.guiupdate = (function( Panel, Table ) ACFHomeCustomGUIUpdate( Table ) end or nil)
 	acfmenupanelcustom:UpdateDisplay( Table )
 end
-http.Fetch("https://raw.github.com/bouletmarc/ACF_CustomMod/master/changelogcustom.txt", ACFCUSTOMChangelogHTTPCallBack, function() end)
+--http.Fetch("https://raw.github.com/bouletmarc/ACF_CustomMod/master/changelogcustom.txt", ACFCUSTOMChangelogHTTPCallBack, function() end)
 --------------------------------------
 --	Set Menu Text
 --------------------------------------
